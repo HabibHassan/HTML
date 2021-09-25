@@ -1,0 +1,167 @@
+/* CSS Document */
+body, html{
+		height:100%;
+		margin:0;
+}
+	li{
+		list-style-type: none;
+	}
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+	.column {
+  float: left;
+  width: 50%;
+	height: 230px;	
+
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/*navbar*/
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: deepskyblue;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+	
+}
+
+.main {
+}
+
+.specdetails {
+    background-color: deepskyblue;
+    background-image: -webkit-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(0,192,255,1.00) 50.67%,rgba(255,255,255,1.00) 98.86%);
+    background-image: -moz-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(0,192,255,1.00) 50.67%,rgba(255,255,255,1.00) 98.86%);
+    background-image: -o-linear-gradient(270deg,rgba(255,255,255,1.00) 0%,rgba(0,192,255,1.00) 50.67%,rgba(255,255,255,1.00) 98.86%);
+    background-image: linear-gradient(180deg,rgba(255,255,255,1.00) 0%,rgba(0,192,255,1.00) 50.67%,rgba(255,255,255,1.00) 98.86%);
+}
+.extraDetails {
+    clear: both;
+    padding-bottom: 0px;
+}
+.gameselection{
+    /* [disabled]width: 100pt; */
+    /* [disabled]height: 150pt; */
+    padding: 25px;
+    background-color: #1E90FF;
+    clear: none;
+	
+}
+.product{
+    text-decoration: none;
+	transition: 1s;
+}
+.product:hover {
+	color: deepskyblue;
+}
+
+.info{
+    float: left;
+    width: 50%;
+    height: 300px;
+	
+}
+/*.backgroundimage{
+	background-image:url('img/background.PNG');
+	height: 300px;
+	
+}*/
+/*service section*/
+section.service {margin-top: 20px; margin-bottom: 30px; padding: 0;}
+section.service aside {width: 33%; float:left; text-align:center;}
+
+section.service .content {margin:15px; background: no-repeat center top; background-size: 75px 75px; padding-top:85px;}
+section.service aside h2 a {color: #000; text-decoration: none;}
+section.service aside h2 a.hover {text-decoration: underline;}
+
+section.service aside .content.math {background-image: url("img/calculator.svg")}
+section.service aside .content.science {background-image: url("img/flask.svg")}
+section.service aside .content.test {background-image: url("img/test.svg")}
+
+
+/*small screens*/
+@media only screen and (max-width: 600px){
+	img{
+		max-width: 100%;
+		display: block;
+	}
+}
+.footer {
+    clear: both;
+    background-color: #9C9C9C;
+}
+.leftfooter {
+    width: 50%;
+    float: left;
+    background-color: #C0C0C0;
+}

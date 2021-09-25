@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Ivy Learning - Registration</title>
+	<link href="style.css" rel="stylesheet">
+	<link href="img/ivy.svg" rel="icon">
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap');
+	
+	body, html {
+  height: 100%;
+  margin: 0;
+}
+
+</style>
+	<body>
+	<div class="navbar">
+  <a href="index.html" style="font-family: 'Mulish', sans-serif;">Ivy Learning</a>
+  <a href="registration.html" style="font-family: 'Mulish', sans-serif;">Registration</a>
+  <div class="dropdown">
+    <button class="dropbtn" style="font-family: 'Mulish', sans-serif;">Topics 
+     
+    </button>
+    <div class="dropdown-content" style="font-family: 'Mulish', sans-serif;">
+      <a href="math.html">Math</a>
+      <a href="">Science</a>
+		<a href="">Certification/Placement Exams</a>
+    </div>
+  </div> 
+</div>
+<h1 style="font-family: 'Mulish', sans-serif; font-size: 50px;">Registration Form</h1>
+		
+		<form action="signup.php" method="post">
+		<fieldset style="font-family: 'Mulish', sans-serif;"><legend>Student Information</legend>	
+		<p style="font-family: 'Mulish', sans-serif;">Student Name</p>	
+			<input style="font-family: 'Mulish', sans-serif;" type="text" name="Fname" placeholder="First Name">
+			<input style="font-family: 'Mulish', sans-serif;" type="text" name="Lname" placeholder="Last Name">
+		<p style="font-family: 'Mulish', sans-serif;">Date of Birth</p>
+			<input style="font-family: 'Mulish', sans-serif;" type="date" name="dob" placeholder="Date of Birth">
+		<p style="font-family: 'Mulish', sans-serif;">Email</p>
+			<input style="font-family: 'Mulish', sans-serif;" type="email" name="email" placeholder="Email">
+			<input style="font-family: 'Mulish', sans-serif;" type="email" name="email2" placeholder="Email(Parent or Guardian)">
+		<p style="font-family: 'Mulish', sans-serif;">Phone Number</p>
+			<input style="font-family: 'Mulish', sans-serif;" type="tel">
+			</fieldset>
+		<fieldset style="font-family: 'Mulish', sans-serif;"><legend>Class Information</legend>
+		<p style="font-family: 'Mulish', sans-serif;">Grade Level</p>
+		  <select style="font-family: 'Mulish', sans-serif;" name="grade">
+				<option value="elementary">4th-6th Grade</option>
+				<option value="middle">7th-8th Grade</option>
+				<option value="underclasshigh">9th-10th Grade</option>
+				<option value="upperclasshigh">11th-12th Grade</option>
+				<option value="undergraduate">Undergraduate</option>
+		  </select>
+		<p style="font-family: 'Mulish', sans-serif;">Desired Topic</p>
+			<p>
+			  <label>
+			    <input type="checkbox" name="Topics" value="Math" id="Topics_0">
+			    Math</label>
+			  <br>
+			  <label>
+			    <input type="checkbox" name="Topics" value="Science" id="Topics_1">
+			    Science</label>
+			  <br>
+			  <label>
+			    <input type="checkbox" name="Topics" value="GRE" id="Topics_2">
+			    GRE Prep</label>
+			  <br>
+			  <label>
+			    <input type="checkbox" name="Topics" value="SAT" id="Topics_3">
+			    PSAT/SAT Prep</label>
+			  <br>
+			  <label>
+			    <input type="checkbox" name="Topics" value="ACT" id="Topics_4">
+			    ACT Prep</label>
+			  <br>
+			  <label>
+			    <input type="checkbox" name="Topics" value="MathPlacement" id="Topics_5">
+			    Math Placement Test</label>
+			  <br>
+			  <label>
+			    <input type="checkbox" name="Topics" value="GMAT" id="Topics_6">
+			    GMAT Prep</label>
+			  <br>
+		  </p>
+		<p style="font-family: 'Mulish', sans-serif;">Session Time</p>
+		  <p>
+			  <label>
+			    <input type="radio" name="Session TIme" value="session1" id="SessionTIme_0">
+			    MWF 4pm-9pm</label>
+			  <br>
+			  <label>
+			    <input type="radio" name="Session TIme" value="session2" id="SessionTIme_1">
+			    T Thurs 4pm-9pm; Sat 10am-2pm</label>
+			  <br>
+		  </p>
+		<p style="font-family: 'Mulish', sans-serif;">Location</p>
+		  <p>
+			  <label>
+			    <input type="checkbox" name="Location" value="lanham" id="Location_0">
+			    Lanham, Maryland</label>
+			  <br>
+			  <label>
+			    <input type="checkbox" name="Location" value="bowie" id="Location_1">
+			    Bowie, Maryland</label>
+			  <br>
+		  </p>
+		<p style="font-family: 'Mulish', sans-serif;">How did you hear about us?</p>
+		<textarea name="heard"></textarea>
+        </fieldset>	
+			<p style="font-family: 'Mulish', sans-serif;">By clicking accept, You agree to the <a href="policies.html">terms and conditions.</a></p>
+			
+			<input align="center" style="font-family: 'Mulish', sans-serif;" type="submit">
+			
+		</form>
+		<br>
+	<div class="row" style="font-family: 'Mulish', sans-serif;">
+  <div class="column" align="center" style="background-color: deepskyblue">
+	<img src="img/logo1.png" style="width: 200px;">
+	  <h3>Ivy Learning LLC</h3>
+  </div>
+  <div class="column" align="center" style="background-color: deepskyblue">
+	
+	  <ul><h4>Links</h4>
+		  <a href="index.html"><li>Homepage</li></a>
+		  <a href="registration.html"><li>Registration</li></a>
+		  <a href="math.html"><li>Math Subjects</li></a>
+		  <a href="science.html"><li>Science Subjects</li></a>
+		  <a href="prep.html"><li>Certification/Placement Prep</li></a>
+		  
+	  </ul>
+	  
+  </div>
+	</div>
+		<footer align="center" style="background-color: deepskyblue; font-family:'Mulish', sans-serif;"><a href="polices.html">Policies</a>   -   240-671-6817   -   <a href="contact.html">Contact Us</a>
+		<br> <img src="img/ivy.svg" height="25"></footer>
+</body>
+</html>
