@@ -1,0 +1,15 @@
+/* CSS Document */
+
+@media print {
+    footer, form,.navbar, iframe, audio, … {
+        display: none;
+    }
+	img{
+		width: 50%;
+		height:50%;
+	}
+
+@page {
+  margin: 2cm;
+}
+}
